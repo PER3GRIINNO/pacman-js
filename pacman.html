@@ -6,10 +6,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pacman</title>
+    <style>
+        /* Definindo o estilo da página */
+        body {
+            margin: 0;
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        /* Estilizando a div do jogo para centralizar */
+        #game-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 500px;
+            height: 500px;
+        }
+    </style>
 </head>
 
-<body style="margin: 0; background-color: black;">
-    <canvas id="canvas" width="500" height="500"></canvas>
+<body>
+    <div id="game-container">
+        <canvas id="canvas" width="500" height="500"></canvas>
+    </div>
     <div style="display:none;">
         <img id="animation" src="animations.gif" width="140" height="20">
         <img id="ghosts" src="ghost.png" width="140" height="20">
